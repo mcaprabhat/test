@@ -58,7 +58,7 @@ public class ATACalcSteps extends TestCase{
 	public void result_should(int arg1) throws Throwable {
 	    // Express the Regexp above with the code you wish you had
 	    //throw new PendingException();
-		String result = driver.findElement(By.id("ID_nameField3")).getAttribute("value");
+		String result = driver.findElement(By.id("ID_nameField3")).getAttribute("value") ;
 		assertEquals(arg1, Integer.parseInt(result));
 		driver.quit();
 	}
